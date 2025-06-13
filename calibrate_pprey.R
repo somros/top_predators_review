@@ -66,7 +66,7 @@ target_consumption <- format_pprey(target)
 
 # now bring in the Atlantis output which has the realized consumption
 # note that this file does not include prey cohort or life stage
-run <- 2093
+run <- 2123
 realized_consumption <- read.delim(paste0("data/outputGOA0",run,"_testDietCheck.txt"), sep = " ")
 # handle time
 ts <- unique(realized_consumption$Time)/365

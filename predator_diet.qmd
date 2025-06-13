@@ -12,10 +12,6 @@ execute:
 
 Bar plots refer to equilibrium diets in the model - average of the last 5 years of a simulation run. Only species that make up for \>5% of the diets are shown.
 
-As you can tell many of these are really out of line (e.g. no salmon in resident KW diet). Some of these can be caused by issues with other species (e.g. the prey is absent) and will take some work, but many (most?) can be improved by changing the input diet matrix.
-
-What would help are comments about what needs to be changed. Better diets that you have already prepared for Ecopath would be top.
-
 ```{r}
 library(readxl)
 library(knitr)
@@ -53,7 +49,7 @@ pred_names <- grps %>%
   pull(Name)
 
 # Diet check (realized diets)
-diet <- read.table("data/outputGOA02093_testDietCheck.txt", sep = " ", header = T)
+diet <- read.table("data/outputGOA02123_testDietCheck.txt", sep = " ", header = T)
 
 # Process diet data
 diet_long <- diet %>%
